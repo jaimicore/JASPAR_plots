@@ -186,11 +186,10 @@ ggsave(filename = jaspar.cite.plot.pdf,
 message("; Static barplot created: ", jaspar.cite.plot.pdf)
 
 
-###########################################
-## Create a shareable link to the charts ##
-###########################################
+#################################
+## Create a link to the charts ##
+#################################
 # Set up API credentials: https://plot.ly/r/getting-started
-message(": ====", plotly.web.flag)
 if (plotly.web.flag) {
     
     message("; Exporting barplot thorugh the plotly wesbite, user: ", plotly.username)
